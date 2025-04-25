@@ -37,7 +37,7 @@ void MainWindow::on_connectbtn_clicked()
     else if (loginData.isEmpty())
     {
         QMessageBox::warning(this, "Ошибка", "Вы забыли указать логин");
-        return;
+        return;ui->stackedWidget->setCurrentWidget(ui->loginpage);
     }
     else if (passwordData.isEmpty())
     {

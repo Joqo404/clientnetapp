@@ -18,7 +18,7 @@
     <item row="0" column="1">
      <widget class="QStackedWidget" name="stackedWidget">
       <property name="currentIndex">
-       <number>0</number>
+       <number>1</number>
       </property>
       <widget class="QWidget" name="loginpage">
        <widget class="QWidget" name="gridLayoutWidget">
@@ -65,7 +65,21 @@
         </layout>
        </widget>
       </widget>
-      <widget class="QWidget" name="chatpage"/>
+      <widget class="QWidget" name="chatpage">
+       <widget class="QLabel" name="label_4">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>140</y>
+          <width>191</width>
+          <height>161</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>МЫ В ЧАТЕ</string>
+        </property>
+       </widget>
+      </widget>
       <widget class="QWidget" name="listpage">
        <widget class="QLabel" name="label">
         <property name="geometry">

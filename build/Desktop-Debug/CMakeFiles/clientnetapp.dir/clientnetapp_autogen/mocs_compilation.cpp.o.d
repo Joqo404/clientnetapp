@@ -349,4 +349,6 @@ CMakeFiles/clientnetapp.dir/clientnetapp_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qtnetworkexports.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
- /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
+ /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h

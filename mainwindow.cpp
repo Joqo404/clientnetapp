@@ -11,6 +11,8 @@ MainWindow::MainWindow(QWidget *parent)
     ui->stackedWidget->setCurrentWidget(ui->loginpage);
     // Инициализация сокета
     socket = new QTcpSocket(this);
+    connect(ui->sendButton, &QPushButton::clicked, this, &MainWindow::sendMessage);
+    connect(ui->messageInput, &QLineEdit::returnPressed, this, &MainWindow::sendMessage);
 }
 
 MainWindow::~MainWindow()
@@ -23,6 +25,27 @@ MainWindow::~MainWindow()
         socket->deleteLater();
     }
 }
+
+void MainWindow::sendMessage()
+{
+    QString message = ui->messageInput->text().trimmed();
+    if (message.isEmpty()) return;
+
+    // Отправка на сервер (если соединение активно)
+    if (socket && socket->state() == QAbstractSocket::ConnectedState) {
+        QByteArray data;
+        QDataStream out(&data, QIODevice::WriteOnly);
+        out.setVersion(QDataStream::Qt_6_4);
+        out << message;
+        socket->write(data);
+    }
+
+    // Локальное отображение (можно убрать, если ждешь echo от сервера)
+    ui->chatView->addItem("Вы: " + message);
+    ui->messageInput->clear();
+}
+
+
 
 void MainWindow::on_connectbtn_clicked()
 {

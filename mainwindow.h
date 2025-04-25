@@ -3,6 +3,7 @@
 
 #include <QMainWindow>
 #include <QTcpSocket> // Для работы с сетью
+#include <QWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui {
@@ -23,7 +24,8 @@ private slots:
 
 private:
     Ui::MainWindow *ui;                   // Указатель на UI-объект, созданный Qt Designer
-    QTcpSocket *socket;                   // Сокет для взаимодействия с сервером
+    QTcpSocket *socket;
+    void sendMessage();        // Сокет для взаимодействия с сервером
 };
 
 #endif // MAINWINDOW_H

@@ -1,0 +1,79 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-Debug-b022afe0ae13e072dbe1.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.16"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "clientnetapp",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "clientnetapp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clientnetapp-Debug-e90a3c4ae6df189b91d6.json",
+					"name" : "clientnetapp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clientnetapp_autogen::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clientnetapp_autogen-Debug-649b5357f622f0e3cb92.json",
+					"name" : "clientnetapp_autogen",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "clientnetapp_autogen_timestamp_deps::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-clientnetapp_autogen_timestamp_deps-Debug-a936b181c311175f7d26.json",
+					"name" : "clientnetapp_autogen_timestamp_deps",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/egor/programming/diploma/clientnetapp/clientnetapp/build/Desktop-Debug",
+		"source" : "/home/egor/programming/diploma/clientnetapp/clientnetapp"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 6
+	}
+}

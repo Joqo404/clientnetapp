@@ -87,7 +87,6 @@ void MainWindow::on_connectbtn_clicked()
         // Выводим ответ сервера
         if (response.startsWith("SUCCESS")) {
             QMessageBox::information(this, "Успех", "Авторизация прошла успешно!");
-            qDebug () << "смена виджета";
             ui->stackedWidget->setCurrentWidget(ui->chatpage);
         } else {
             QMessageBox::critical(this, "Ошибка", "Неверный логин или пароль!");

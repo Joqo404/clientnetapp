@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTcpSocket> // Для работы с сетью
 #include <QWidget>
-
+#include <QString>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;
@@ -26,6 +26,10 @@ private:
     Ui::MainWindow *ui;                   // Указатель на UI-объект, созданный Qt Designer
     QTcpSocket *socket;
     void sendMessage();        // Сокет для взаимодействия с сервером
+    void receiveMessage();
+    QString authData;
+    quint16 blockSize;
+    bool waitingForAuthResponse;
 };
 
 #endif // MAINWINDOW_H

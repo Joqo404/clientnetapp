@@ -28,6 +28,8 @@ private:
     void sendMessage();        // Сокет для взаимодействия с сервером
     void receiveMessage();
     QString authData;
+    quint16 blockSize;
+    bool waitingForAuthResponse;
 };
 
 #endif // MAINWINDOW_H

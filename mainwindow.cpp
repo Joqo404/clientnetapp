@@ -7,10 +7,13 @@
 MainWindow::MainWindow(QWidget *parent)
     : QMainWindow(parent)
     , ui(new Ui::MainWindow)
+    , blockSize(0)
+    , waitingForAuthResponse(false) // Инициализация флага ожидания авторизации
 {
     ui->setupUi(this);
     ui->stackedWidget->setCurrentWidget(ui->loginpage);
     socket = new QTcpSocket(this);
+
     connect(ui->sendButton, &QPushButton::clicked, this, &MainWindow::sendMessage);
     connect(ui->messageInput, &QLineEdit::returnPressed, this, &MainWindow::sendMessage);
     connect(socket, &QTcpSocket::readyRead, this, &MainWindow::receiveMessage);
@@ -48,7 +51,6 @@ void MainWindow::sendMessage()
 
 void MainWindow::receiveMessage()
 {
-    static quint16 blockSize = 0;
     QDataStream in(socket);
     in.setVersion(QDataStream::Qt_6_4);
 
@@ -62,9 +64,20 @@ void MainWindow::receiveMessage()
 
         QString message;
         in >> message;
-        ui->chatView->addItem(message);
-
         blockSize = 0;
+
+        if (waitingForAuthResponse) {
+            waitingForAuthResponse = false; // Сбрасываем флаг ожидания авторизации
+            if (message == "SUCCESS") {
+                QMessageBox::information(this, "Успех", "Авторизация прошла успешно!");
+                ui->stackedWidget->setCurrentWidget(ui->chatpage);
+            } else {
+                QMessageBox::critical(this, "Ошибка", message);
+                socket->disconnectFromHost();
+            }
+        } else {
+            ui->chatView->addItem(message);
+        }
     }
 }
 
@@ -90,7 +103,10 @@ void MainWindow::on_connectbtn_clicked()
         return;
     }
 
-    // Отправка данных с длиной пакета
+    // Устанавливаем флаг ожидания авторизации
+    waitingForAuthResponse = true;
+
+    // Отправка данных авторизации
     QByteArray block;
     QDataStream out(&block, QIODevice::WriteOnly);
     out.setVersion(QDataStream::Qt_6_4);
@@ -100,49 +116,10 @@ void MainWindow::on_connectbtn_clicked()
     out.device()->seek(0);
     out << quint16(block.size() - sizeof(quint16));
 
-    qDebug() << "Размер блока:" << block.size() << "Содержимое:" << block.toHex();
-
     socket->write(block);
 
     if (!socket->waitForBytesWritten(3000)) {
         QMessageBox::critical(this, "Ошибка", "Не удалось отправить данные на сервер!");
         return;
     }
-
-    if (socket->waitForReadyRead(5000)) {
-        // Чтение ответа по тому же протоколу, что и обычные сообщения
-        static quint16 blockSize = 0;
-        QDataStream in(socket);
-        in.setVersion(QDataStream::Qt_6_4);
-
-        if (blockSize == 0) {
-            if (socket->bytesAvailable() < sizeof(quint16)) {
-                QMessageBox::critical(this, "Ошибка", "Неполный заголовок пакета");
-                return;
-            }
-            in >> blockSize;
-        }
-
-        if (socket->bytesAvailable() < blockSize) {
-            QMessageBox::critical(this, "Ошибка", "Неполный пакет данных");
-            return;
-        }
-
-        QString response;
-        in >> response;
-        blockSize = 0; // Сбрасываем для следующего сообщения
-
-        qDebug() << "Получен ответ от сервера:" << response;
-
-        if (response == "SUCCESS") {
-            QMessageBox::information(this, "Успех", "Авторизация прошла успешно!");
-            ui->stackedWidget->setCurrentWidget(ui->chatpage);
-        } else {
-            QMessageBox::critical(this, "Ошибка", response);
-        }
-    } else {
-        QMessageBox::critical(this, "Ошибка", "Нет ответа от сервера!");
-        qDebug() << "Доступно байт:" << socket->bytesAvailable();
-    }
 }
-

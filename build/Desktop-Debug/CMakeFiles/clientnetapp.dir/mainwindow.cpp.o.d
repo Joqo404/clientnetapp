@@ -347,6 +347,8 @@ CMakeFiles/clientnetapp.dir/mainwindow.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
  /home/egor/programming/diploma/clientnetapp/clientnetapp/build/Desktop-Debug/clientnetapp_autogen/include/./ui_mainwindow.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QVariant \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qvariant.h \

@@ -45,7 +45,9 @@ void MainWindow::sendMessage()
 
         socket->write(block);
     }
-
+    QString clientMessage = ui->messageInput->text();
+    clientMessage.prepend("Вы: ");
+    ui->chatView->addItem(clientMessage);
     ui->messageInput->clear();
 }
 

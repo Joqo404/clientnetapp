@@ -4,7 +4,7 @@
 #include <QMainWindow>
 #include <QTcpSocket> // Для работы с сетью
 #include <QWidget>
-
+#include <QString>
 QT_BEGIN_NAMESPACE
 namespace Ui {
 class MainWindow;

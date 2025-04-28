@@ -350,14 +350,30 @@ CMakeFiles/clientnetapp.dir/clientnetapp_autogen/mocs_compilation.cpp.o: \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qabstractsocket.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qiodevice.h \
  /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qhostaddress.h \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QWidget \
- /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qwidget.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QString \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qstring.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/QUdpSocket \
+ /usr/include/x86_64-linux-gnu/qt6/QtNetwork/qudpsocket.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioInput \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioinput.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaglobal.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimedia-config.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qtmultimediaexports.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudio.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioOutput \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiooutput.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/QBuffer \
+ /usr/include/x86_64-linux-gnu/qt6/QtCore/qbuffer.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioFormat \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QMediaDevices \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qmediadevices.h \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/QCryptographicHash \
  /usr/include/x86_64-linux-gnu/qt6/QtCore/qcryptographichash.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/QMessageBox \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qmessagebox.h \
  /usr/include/x86_64-linux-gnu/qt6/QtWidgets/qdialog.h \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/QDebug \
- /usr/include/x86_64-linux-gnu/qt6/QtCore/qdebug.h
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSource \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosource.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudioformat.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiodevice.h \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/QAudioSink \
+ /usr/include/x86_64-linux-gnu/qt6/QtMultimedia/qaudiosink.h

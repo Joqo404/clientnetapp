@@ -44,6 +44,7 @@ public:
     QListWidget *chatView;
     QLineEdit *messageInput;
     QPushButton *sendButton;
+    QPushButton *voiceBtn;
     QWidget *listpage;
     QLabel *label;
     QMenuBar *menubar;
@@ -106,8 +107,17 @@ public:
         sendButton = new QPushButton(chatpage);
         sendButton->setObjectName("sendButton");
         sendButton->setGeometry(QRect(710, 430, 61, 31));
-        QIcon icon(QIcon::fromTheme(QString::fromUtf8("mail-send")));
+        QIcon icon;
+        QString iconThemeName = QString::fromUtf8("mail-send");
+        if (QIcon::hasThemeIcon(iconThemeName)) {
+            icon = QIcon::fromTheme(iconThemeName);
+        } else {
+            icon.addFile(QString::fromUtf8("."), QSize(), QIcon::Normal, QIcon::Off);
+        }
         sendButton->setIcon(icon);
+        voiceBtn = new QPushButton(chatpage);
+        voiceBtn->setObjectName("voiceBtn");
+        voiceBtn->setGeometry(QRect(130, 440, 80, 23));
         stackedWidget->addWidget(chatpage);
         listpage = new QWidget();
         listpage->setObjectName("listpage");
@@ -142,6 +152,7 @@ public:
         label_3->setText(QCoreApplication::translate("MainWindow", "Password", nullptr));
         connectbtn->setText(QCoreApplication::translate("MainWindow", "connect", nullptr));
         sendButton->setText(QString());
+        voiceBtn->setText(QCoreApplication::translate("MainWindow", "voiceBtn", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "\320\242\321\203\321\202 \320\261\321\203\320\264\320\265\321\202 \320\273\320\270\321\201\321\202 \320\277\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\320\265\320\271", nullptr));
     } // retranslateUi
 

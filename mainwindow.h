@@ -1,17 +1,22 @@
-#ifndef MAINWINDOW_H
-#define MAINWINDOW_H
+#pragma once
 
 #include <QMainWindow>
-#include <QTcpSocket> // Для работы с сетью
-#include <QWidget>
-#include <QString>
+#include <QTcpSocket>
+#include <QUdpSocket>
+#include <QAudioInput>
+#include <QAudioOutput>
+#include <QBuffer>
+#include <QAudioFormat>
+#include <QMediaDevices>
 #include <QCryptographicHash>
 #include <QMessageBox>
-#include <QDebug>
+#include <QBuffer>
+#include <QAudioSource>
+#include <QAudioSink>
+
+
 QT_BEGIN_NAMESPACE
-namespace Ui {
-class MainWindow;
-}
+namespace Ui { class MainWindow; }
 QT_END_NAMESPACE
 
 class MainWindow : public QMainWindow
@@ -19,20 +24,25 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    MainWindow(QWidget *parent = nullptr); // Конструктор
-    ~MainWindow();                         // Деструктор
+    MainWindow(QWidget *parent = nullptr);
+    ~MainWindow();
 
 private slots:
-    void on_connectbtn_clicked();         // Слот для обработки нажатия кнопки "Подключиться"
+    void sendMessage();
+    void receiveMessage();
+    void on_connectbtn_clicked();
+    void startVoiceTransmission();
+    void stopVoiceTransmission();
+    void receiveVoice();
 
 private:
-    Ui::MainWindow *ui;                   // Указатель на UI-объект, созданный Qt Designer
+    Ui::MainWindow *ui;
     QTcpSocket *socket;
-    void sendMessage();        // Сокет для взаимодействия с сервером
-    void receiveMessage();
-    QString authData;
+    QUdpSocket *udpSocket;
     quint16 blockSize;
     bool waitingForAuthResponse;
-};
 
-#endif // MAINWINDOW_H
+    QAudioSource *audioSource = nullptr;  // Было QAudioInput
+    QAudioSink *audioSink = nullptr;      // Было QAudioOutput
+    QIODevice *inputDevice = nullptr;
+};

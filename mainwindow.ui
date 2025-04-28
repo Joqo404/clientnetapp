@@ -99,7 +99,21 @@
          <string/>
         </property>
         <property name="icon">
-         <iconset theme="mail-send"/>
+         <iconset theme="mail-send">
+          <normaloff>.</normaloff>.</iconset>
+        </property>
+       </widget>
+       <widget class="QPushButton" name="voiceBtn">
+        <property name="geometry">
+         <rect>
+          <x>130</x>
+          <y>440</y>
+          <width>80</width>
+          <height>23</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>voiceBtn</string>
         </property>
        </widget>
       </widget>

@@ -2174,6 +2174,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_alsa",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: alsa (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_android_style_assets",
 			"properties" : 
 			[
@@ -2228,6 +2240,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: arm_crypto (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_avfoundation",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: avfoundation (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -2640,6 +2664,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_coreaudio",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: coreaudio (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_cpp_winrt",
@@ -3362,12 +3398,36 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_evr",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: evr (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_f16c",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: f16c (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_ffmpeg",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: ffmpeg (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -3674,6 +3734,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_gpu_vivante",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gpu_vivante (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_graphicseffect",
 			"properties" : 
 			[
@@ -3720,6 +3792,66 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_gstreamer",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gstreamer (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_gstreamer_1_0",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gstreamer_1_0 (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_gstreamer_app",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gstreamer_app (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_gstreamer_gl",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gstreamer_gl (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_gstreamer_photography",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: gstreamer_photography (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_gtk3",
@@ -4274,12 +4406,36 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_linux_dmabuf",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: linux_dmabuf (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_linux_netlink",
 			"properties" : 
 			[
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: linux_netlink (from target Qt6::Network)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_linux_v4l",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: linux_v4l (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -4448,6 +4604,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: mips_dspr2 (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_mmrenderer",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: mmrenderer (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -4652,6 +4820,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: opengles32 (from target Qt6::Gui)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_opensles",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: opensles (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -4952,6 +5132,18 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: publicsuffix_system (from target Qt6::Network)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_pulseaudio",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: pulseaudio (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -5396,6 +5588,30 @@
 				{
 					"name" : "HELPSTRING",
 					"value" : "Qt feature: sortfilterproxymodel (from target Qt6::Core)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_spatialaudio",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: spatialaudio (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_spatialaudio_quick3d",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: spatialaudio_quick3d (from target Qt6::Multimedia)"
 				}
 			],
 			"type" : "INTERNAL",
@@ -6350,6 +6566,18 @@
 			"value" : "OFF"
 		},
 		{
+			"name" : "QT_FEATURE_vaapi",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: vaapi (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "ON"
+		},
+		{
 			"name" : "QT_FEATURE_vaes",
 			"properties" : 
 			[
@@ -6372,6 +6600,18 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_videotoolbox",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: videotoolbox (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_vkgen",
@@ -6434,6 +6674,18 @@
 			"value" : "ON"
 		},
 		{
+			"name" : "QT_FEATURE_wasm",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: wasm (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
 			"name" : "QT_FEATURE_whatsthis",
 			"properties" : 
 			[
@@ -6492,6 +6744,30 @@
 			],
 			"type" : "INTERNAL",
 			"value" : "ON"
+		},
+		{
+			"name" : "QT_FEATURE_wmf",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: wmf (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
+		},
+		{
+			"name" : "QT_FEATURE_wmsdk",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "Qt feature: wmsdk (from target Qt6::Multimedia)"
+				}
+			],
+			"type" : "INTERNAL",
+			"value" : "OFF"
 		},
 		{
 			"name" : "QT_FEATURE_xcb",
@@ -6768,6 +7044,18 @@
 			],
 			"type" : "PATH",
 			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Qt6Gui"
+		},
+		{
+			"name" : "Qt6Multimedia_DIR",
+			"properties" : 
+			[
+				{
+					"name" : "HELPSTRING",
+					"value" : "The directory containing a CMake configuration file for Qt6Multimedia."
+				}
+			],
+			"type" : "PATH",
+			"value" : "/usr/lib/x86_64-linux-gnu/cmake/Qt6Multimedia"
 		},
 		{
 			"name" : "Qt6Network_DIR",

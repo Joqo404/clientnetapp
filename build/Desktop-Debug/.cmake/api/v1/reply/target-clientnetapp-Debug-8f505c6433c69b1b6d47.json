@@ -235,6 +235,10 @@
 				},
 				{
 					"backtrace" : 6,
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 6,
 					"define" : "QT_NETWORK_LIB"
 				},
 				{
@@ -277,6 +281,11 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/usr/include/x86_64-linux-gnu/qt6/QtNetwork"
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt6/QtMultimedia"
 				}
 			],
 			"language" : "CXX",
@@ -341,7 +350,7 @@
 			},
 			{
 				"backtrace" : 6,
-				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2",
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.4.2",
 				"role" : "libraries"
 			},
 			{
@@ -357,6 +366,11 @@
 			{
 				"backtrace" : 29,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libOpenGL.so",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 6,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2",
 				"role" : "libraries"
 			},
 			{

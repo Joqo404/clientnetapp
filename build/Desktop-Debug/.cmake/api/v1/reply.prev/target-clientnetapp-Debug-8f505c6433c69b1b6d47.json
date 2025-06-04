@@ -235,6 +235,13 @@
 				},
 				{
 					"backtrace" : 6,
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply.prev/target-clientnetapp-Debug-e90a3c4ae6df189b91d6.json
+========
+					"define" : "QT_MULTIMEDIA_LIB"
+				},
+				{
+					"backtrace" : 6,
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/target-clientnetapp-Debug-8f505c6433c69b1b6d47.json
 					"define" : "QT_NETWORK_LIB"
 				},
 				{
@@ -277,6 +284,14 @@
 					"backtrace" : 6,
 					"isSystem" : true,
 					"path" : "/usr/include/x86_64-linux-gnu/qt6/QtNetwork"
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply.prev/target-clientnetapp-Debug-e90a3c4ae6df189b91d6.json
+========
+				},
+				{
+					"backtrace" : 6,
+					"isSystem" : true,
+					"path" : "/usr/include/x86_64-linux-gnu/qt6/QtMultimedia"
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/target-clientnetapp-Debug-8f505c6433c69b1b6d47.json
 				}
 			],
 			"language" : "CXX",
@@ -341,7 +356,11 @@
 			},
 			{
 				"backtrace" : 6,
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply.prev/target-clientnetapp-Debug-e90a3c4ae6df189b91d6.json
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2",
+========
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.4.2",
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/target-clientnetapp-Debug-8f505c6433c69b1b6d47.json
 				"role" : "libraries"
 			},
 			{
@@ -360,6 +379,14 @@
 				"role" : "libraries"
 			},
 			{
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply.prev/target-clientnetapp-Debug-e90a3c4ae6df189b91d6.json
+========
+				"backtrace" : 6,
+				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2",
+				"role" : "libraries"
+			},
+			{
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/target-clientnetapp-Debug-8f505c6433c69b1b6d47.json
 				"backtrace" : 30,
 				"fragment" : "/usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2",
 				"role" : "libraries"

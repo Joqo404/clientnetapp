@@ -132,10 +132,11 @@ clientnetapp: CMakeFiles/clientnetapp.dir/main.cpp.o
 clientnetapp: CMakeFiles/clientnetapp.dir/mainwindow.cpp.o
 clientnetapp: CMakeFiles/clientnetapp.dir/build.make
 clientnetapp: /usr/lib/x86_64-linux-gnu/libQt6Widgets.so.6.4.2
-clientnetapp: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
+clientnetapp: /usr/lib/x86_64-linux-gnu/libQt6Multimedia.so.6.4.2
 clientnetapp: /usr/lib/x86_64-linux-gnu/libQt6Gui.so.6.4.2
 clientnetapp: /usr/lib/x86_64-linux-gnu/libGLX.so
 clientnetapp: /usr/lib/x86_64-linux-gnu/libOpenGL.so
+clientnetapp: /usr/lib/x86_64-linux-gnu/libQt6Network.so.6.4.2
 clientnetapp: /usr/lib/x86_64-linux-gnu/libQt6Core.so.6.4.2
 clientnetapp: CMakeFiles/clientnetapp.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/home/egor/programming/diploma/clientnetapp/clientnetapp/build/Desktop-Debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Linking CXX executable clientnetapp"

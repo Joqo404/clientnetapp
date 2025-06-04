@@ -44,7 +44,11 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "clientnetapp::@6890427a1f51a3e7e1df",
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply.prev/codemodel-v2-89329d0493c6628ce157.json
 					"jsonFile" : "target-clientnetapp-Debug-e90a3c4ae6df189b91d6.json",
+========
+					"jsonFile" : "target-clientnetapp-Debug-8f505c6433c69b1b6d47.json",
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/codemodel-v2-437059c6357971807b57.json
 					"name" : "clientnetapp",
 					"projectIndex" : 0
 				},

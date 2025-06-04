@@ -1,0 +1,97 @@
+{
+	"cmake" : 
+	{
+		"generator" : 
+		{
+			"multiConfig" : false,
+			"name" : "Unix Makefiles"
+		},
+		"paths" : 
+		{
+			"cmake" : "/usr/bin/cmake",
+			"cpack" : "/usr/bin/cpack",
+			"ctest" : "/usr/bin/ctest",
+			"root" : "/usr/share/cmake-3.28"
+		},
+		"version" : 
+		{
+			"isDirty" : false,
+			"major" : 3,
+			"minor" : 28,
+			"patch" : 3,
+			"string" : "3.28.3",
+			"suffix" : ""
+		}
+	},
+	"objects" : 
+	[
+		{
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply/index-2025-04-28T12-52-56-0682.json
+			"jsonFile" : "codemodel-v2-89329d0493c6628ce157.json",
+========
+			"jsonFile" : "codemodel-v2-437059c6357971807b57.json",
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/index-2025-04-28T09-38-43-0303.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		},
+		{
+			"jsonFile" : "cache-v2-8cd44f2905c0bfd37107.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		{
+			"jsonFile" : "cmakeFiles-v1-655281b52e816f371e81.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		}
+	],
+	"reply" : 
+	{
+		"cache-v2" : 
+		{
+			"jsonFile" : "cache-v2-8cd44f2905c0bfd37107.json",
+			"kind" : "cache",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 0
+			}
+		},
+		"cmakeFiles-v1" : 
+		{
+			"jsonFile" : "cmakeFiles-v1-655281b52e816f371e81.json",
+			"kind" : "cmakeFiles",
+			"version" : 
+			{
+				"major" : 1,
+				"minor" : 0
+			}
+		},
+		"codemodel-v2" : 
+		{
+<<<<<<<< HEAD:build/Desktop-Debug/.cmake/api/v1/reply/index-2025-04-28T12-52-56-0682.json
+			"jsonFile" : "codemodel-v2-89329d0493c6628ce157.json",
+========
+			"jsonFile" : "codemodel-v2-437059c6357971807b57.json",
+>>>>>>>> master:build/Desktop-Debug/.cmake/api/v1/reply/index-2025-04-28T09-38-43-0303.json
+			"kind" : "codemodel",
+			"version" : 
+			{
+				"major" : 2,
+				"minor" : 6
+			}
+		}
+	}
+}
